@@ -1,0 +1,29 @@
+<h2 mat-dialog-title>Delete Customer</h2>
+<mat-dialog-content class="mat-typography">
+ <table class="table">
+   <thead>
+   <tr>
+     <td>#Id</td>
+     <td>{{ data?.id }}</td>
+   </tr>
+   <tr>
+     <td>Name</td>
+     <td>{{ data?.name }}</td>
+   </tr>
+   <tr>
+     <td>Address</td>
+     <td>{{ data?.address }}</td>
+   </tr>
+   <tr>
+     <td>Salary</td>
+     <td>{{ data?.salary }}</td>
+   </tr>
+   </thead>
+ </table>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Yes Delete</button>
+</mat-dialog-actions>
+
+
